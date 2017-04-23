@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relBox"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_you"
+            android:layout_centerVertical="true"
+            android:id="@+id/arrowYou"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtContent"
+            android:text="Name"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/btn_login"
+            android:layout_marginLeft="12dp"
+            android:padding="15dp"
+            android:textSize="@dimen/font_size_small"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/arrow_me"
+            android:layout_centerVertical="true"
+            android:id="@+id/arrowMe"
+            android:layout_toRightOf="@+id/txtContent"
+            android:layout_marginLeft="-2dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtName"
+        android:text="Content"
+        android:textColor="@color/colorLightGray"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/relBox"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/font_size_small"/>
+</RelativeLayout>

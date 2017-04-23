@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+
+    <!-- Strings related to login -->
+    <string name="signup_log_in">Sign up / Log in</string>
+    <string name="term">By signing, you agree to the Terms of Service and Privacy Policy, including Cookie Use. Others will be able to find you by searching for you email address or phone number when provided.</string>
+    <string name="user_name">User name</string>
+    <string name="password">password</string>
+
+    <!-- Navigation Title -->
+    <string name="chat_app">Chat app</string>
+
+    <!-- Strings related to chat message -->
+    <string name="ac_logout">Log out</string>
+    <string name="txt_message">Start a new message</string>
+    <string name="btn_send">send</string>
+
+    <!-- Error messages -->
+    <string name="error_name">Username is required.</string>
+    <string name="error_password">Password is required.</string>
+    <string name="error_password_length">Password must be at least 5 characters.</string>
+    <string name="error_read_user">Unable to get users.</string>
+    <string name="error_invalid_login">Username and Password do no match.</string>
+    <string name="error_register">Unable to register user.</string>
+    <string name="error_chat_list">Unable to read chat list.</string>
+    <string name="error_network">No Internet Connection Detected.</string>
+</resources>

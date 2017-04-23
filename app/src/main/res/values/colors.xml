@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ccd6dd</color>
+    <color name="colorDarkGray">#333333</color>
+    <color name="colorLightGray">#647787</color>
+    <color name="colorLightBlue">#f5f8fa</color>
+    <color name="colorWhiteStroke">#f7f9fb</color>
+    <color name="colorYellowGreen">#88e306</color>
+    <color name="colorStrokeYellowGreen">#a0e938</color>
+    <color name="colorYellowGreenShade">#7acc05</color>
+    <color name="colorDarkGrayButton">#666666</color>
+    <color name="colorDarkGrayButtonShade">#5b5b5b</color>
+</resources>

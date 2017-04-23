@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "238629442813",
+    "firebase_url": "https://chat-app-9236f.firebaseio.com",
+    "project_id": "chat-app-9236f",
+    "storage_bucket": "chat-app-9236f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:238629442813:android:5ea577a0881a8ef9",
+        "android_client_info": {
+          "package_name": "com.chat.rexenjeandy.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "238629442813-t9vip4c337nof721n3r096dp9nd827ql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNn7uoG3elmZo_i6GUPTpwxx6z5X-0GT0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
