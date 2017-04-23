@@ -106,6 +106,8 @@ public class ChatListFragment extends Fragment implements ChatListContract.View,
         chatMessageArray.clear();
         this.listener = new ChatListPresenter(this);
 
+        pBar.setVisibility(View.VISIBLE);
+
         if (Network.isNetworkAvailable() == true) {
             root = FirebaseDatabase.getInstance().getReference().child(Config.STR_CHAT);
 
@@ -200,10 +202,10 @@ public class ChatListFragment extends Fragment implements ChatListContract.View,
     @Override
     public void onClick(View v) {
         if (v == btnSend) {
-            pBar.setVisibility(View.VISIBLE);
             message = txtMessage.getText().toString();
 
             if (message.trim().length() > 0) {
+                pBar.setVisibility(View.VISIBLE);
                 Map<String, Object> chatData = new HashMap<>();
                 chatData.put("name", currentUser);
                 chatData.put("message", message);

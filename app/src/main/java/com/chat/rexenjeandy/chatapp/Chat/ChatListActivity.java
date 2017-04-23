@@ -9,6 +9,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -51,10 +53,11 @@ public class ChatListActivity extends AppCompatActivity implements View.OnClickL
         actionBarTitleview.setText(R.string.chat_app);
 
         LinearLayout.LayoutParams pTitle = (LinearLayout.LayoutParams)actionBarTitleview.getLayoutParams();
-        pTitle.setMargins(88, 0, 0, 0);
+        int marginLeft = (getScreenWidth()/4) / 2;
+        pTitle.setMargins(marginLeft - 8, 0, 0, 0);
         actionBarTitleview.setLayoutParams(pTitle);
 
-        ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT, Gravity.RIGHT);
+        ActionBar.LayoutParams params = new ActionBar.LayoutParams(ActionBar.LayoutParams.MATCH_PARENT, ActionBar.LayoutParams.MATCH_PARENT, Gravity.CENTER);
 
         actionBar.setCustomView(actionBarLayout, params);
         actionBar.setDisplayHomeAsUpEnabled(false);
@@ -68,6 +71,19 @@ public class ChatListActivity extends AppCompatActivity implements View.OnClickL
         if (null == savedInstanceState) {
             initFragment(ChatListFragment.newInstance());
         }
+    }
+
+    /**
+     * getScreenWidth
+     * @return int
+     */
+    private int getScreenWidth() {
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        int height = displayMetrics.heightPixels;
+        int width = displayMetrics.widthPixels;
+
+        return width;
     }
 
     /**
